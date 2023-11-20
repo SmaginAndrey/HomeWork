@@ -27,5 +27,6 @@ public class Task1_1 {
         System.out.format(format, f, resF);
         System.out.format(format, g, resG);
         System.out.format(format, h, resH);
+        System.out.println();
     }
 }
