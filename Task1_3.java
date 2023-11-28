@@ -18,14 +18,21 @@ public class Task1_3 {
                 maxNumber = Math.max(num, maxNumber);
                 minNumber = Math.min(num, minNumber);
                 averageNumber = sum / count;
-                System.out.println("Сумма " + sum);
-                System.out.println("Количество " + count);
-                System.out.println("Максимальное значение " + maxNumber);
-                System.out.println("Минимальное значение " + minNumber);
-                System.out.println("Среднее значение " + averageNumber);
             }
         } catch (NumberFormatException e){
 
+        }finally {
+            if (count > 0) {
+                averageNumber = sum / count;
+            }
+            else {
+                maxNumber = minNumber = 0;
+            }
+            System.out.println("Сумма " + sum);
+            System.out.println("Количество " + count);
+            System.out.println("Максимальное значение " + maxNumber);
+            System.out.println("Минимальное значение " + minNumber);
+            System.out.println("Среднее значение " + averageNumber);
         }
     }
 }
